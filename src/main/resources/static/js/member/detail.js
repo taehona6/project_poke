@@ -81,7 +81,7 @@ function TIMER() {
 		if (second.value < 0) {
 			minute.value = min - 1;
 			second.value = 59;
-			// location.reload(true);
+			location.reload(true);
 		}
 
 /*		if (minute.value == 0 && second.value == 59) {
