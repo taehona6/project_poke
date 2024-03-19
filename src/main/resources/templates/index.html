@@ -3,32 +3,26 @@
 <link href="/css/index.css" rel="stylesheet" />
 <th:block th:replace="~{layout :: setFragment(~{this::content})}">
 	<th:block th:fragment="content">
+	
 		<th:block th:if="${session.loginMemberId=='adminthn'}">
- 	<div class="anime-box"></div>
-	<div class="nes-container with-title container" style="width:60%">
-		<p class="title" style="font-size:30px;margin-top:-40px;background-color: rgb(206, 231, 249);">인덱스</p>	
+		 	<div class="anime-box"></div>
+		 	
+				<div class="nes-container with-title container" style="width:60%">
+					<p class="title" style="font-size:30px;margin-top:-40px;background-color: rgb(206, 231, 249);">인덱스</p>	
+					
+					<button onclick="start()">시작</button>
 		
-		<button onclick="start()">시작</button>
-		
-		<a href="/kptest">asfd</a>
-		
+					<a href="/kptest">asfd</a>
 
+					<input type="text" id="pno" ><button onclick="setPokemon()">포켓몬추가</button>
+					<hr>
+					<input id="start" placeholder="start"><input id="end" placeholder="end">
+					<br> <input id="print" placeholder="print"><br>
+					<button type="button" id="aa">숫자 출력</button>
 
-			
-		
-		
-		
-		
-		
-		 <input type="text" id="pno" ><button onclick="setPokemon()">포켓몬추가</button>
-		<hr>
-		<input id="start" placeholder="start"><input id="end" placeholder="end">
-		<br> <input id="print" placeholder="print"><br>
-		<button type="button" id="aa">숫자 출력</button>
-
-	</div>
+				</div>
+			</th:block>
 		</th:block>
-	</th:block>
 </th:block>
 <script src="/js/index.js"></script>
 <script>
